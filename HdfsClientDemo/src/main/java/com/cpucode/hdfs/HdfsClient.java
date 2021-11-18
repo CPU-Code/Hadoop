@@ -1,8 +1,7 @@
 package com.cpucode.hdfs;
 
 import org.apache.hadoop.conf.Configuration;
-import org.apache.hadoop.fs.FileSystem;
-import org.apache.hadoop.fs.Path;
+import org.apache.hadoop.fs.*;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
@@ -10,6 +9,7 @@ import org.junit.Test;
 import java.io.IOException;
 import java.net.URI;
 import java.net.URISyntaxException;
+import java.util.Arrays;
 
 /**
  * 客户端代码常用套路
@@ -157,6 +157,36 @@ public class HdfsClient {
         fs.rename(new Path("/cpu"), new Path("/cpucode"));
     }
 
+    /**
+     * 获取文件详细信息
+     * @throws IOException
+     */
+    @Test
+    public void fileDetail() throws IOException {
+        // 获取所有文件信息
+        RemoteIterator<LocatedFileStatus> listFiles = fs.listFiles(new Path("/"), true);
+
+        // 遍历文件
+        while (listFiles.hasNext()) {
+            LocatedFileStatus fileStatus = listFiles.next();
+
+            System.out.println("==========" + fileStatus.getPath() + "=========");
+            System.out.print(fileStatus.getPermission() + "  ");
+            System.out.print(fileStatus.getOwner() + "  ");
+            System.out.print(fileStatus.getGroup() + "  ");
+            System.out.print(fileStatus.getLen() + "  ");
+            System.out.print(fileStatus.getModificationTime() + "  ");
+            System.out.print(fileStatus.getReplication() + "  ");
+            System.out.print(fileStatus.getBlockSize() + "  ");
+            System.out.println(fileStatus.getPath().getName());
+
+            // 获取块信息
+            BlockLocation[] blockLocations = fileStatus.getBlockLocations();
+
+            System.out.println(Arrays.toString(blockLocations));
+
+        }
+    }
 
 
 }
