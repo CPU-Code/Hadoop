@@ -128,14 +128,14 @@ public class HdfsClient {
          * var1 : 要删除的路径
          * var2 : 是否递归删除
          */
-       // fs.delete(new Path("/"), false);
+       // fs.delete(new Path("/cpucode/test04.txt"), false);
 
         // 删除空目录
-       // fs.delete(new Path("/cpu"), false);
+       // fs.delete(new Path("/cpucode/test"), false);
 
 
         // 删除非空目录
-       fs.delete(new Path("/cpucode"), true);
+       fs.delete(new Path("/test"), true);
     }
 
     /**
@@ -151,10 +151,10 @@ public class HdfsClient {
         //fs.rename(new Path("/cpu/test.txt"), new Path("/cpu/test01.txt"));
 
         // 文件的移动和更名
-        //fs.rename(new Path("/cpu/test01.txt"),new Path("/test.txt"));
+        //fs.rename(new Path("/cpu/test01.txt"), new Path("/test.txt"));
 
         // 目录更名
-        fs.rename(new Path("/cpu"), new Path("/cpucode"));
+        fs.rename(new Path("/cpucode"), new Path("/code"));
     }
 
     /**
