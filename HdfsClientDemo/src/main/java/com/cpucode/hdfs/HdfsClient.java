@@ -118,7 +118,29 @@ public class HdfsClient {
                 false);
     }
 
+    /**
+     * 删除
+     */
+    @Test
+    public void testRm() throws IOException {
+        /**
+         * 删除文件
+         * var1 : 要删除的路径
+         * var2 : 是否递归删除
+         */
+       // fs.delete(new Path("/"), false);
+
+        // 删除空目录
+       // fs.delete(new Path("/cpu"), false);
 
 
+        // 删除非空目录
+       fs.delete(new Path("/cpucode"), true);
+    }
+
+
+    public void testMv(){
+
+    }
 
 }
