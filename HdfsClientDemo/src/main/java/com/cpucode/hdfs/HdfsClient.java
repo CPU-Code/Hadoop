@@ -138,9 +138,25 @@ public class HdfsClient {
        fs.delete(new Path("/cpucode"), true);
     }
 
+    /**
+     * 文件的更名和移动
+     */
+    @Test
+    public void testMv() throws IOException{
+        /**
+         * 对文件名称的修改
+         * var1 : 原文件路径
+         * var2 : 目标文件路径
+         */
+        //fs.rename(new Path("/cpu/test.txt"), new Path("/cpu/test01.txt"));
 
-    public void testMv(){
+        // 文件的移动和更名
+        //fs.rename(new Path("/cpu/test01.txt"),new Path("/test.txt"));
 
+        // 目录更名
+        fs.rename(new Path("/cpu"), new Path("/cpucode"));
     }
+
+
 
 }
