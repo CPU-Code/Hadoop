@@ -188,5 +188,21 @@ public class HdfsClient {
         }
     }
 
+    /**
+     * 判断是文件夹还是文件
+     * @throws IOException
+     */
+    @Test
+    public void testFile() throws IOException {
+        FileStatus[] listStatus = fs.listStatus(new Path("/"));
+
+        for (FileStatus status : listStatus) {
+            if (status.isFile()) {
+                System.out.println("文件：" + status.getPath().getName());
+            } else {
+                System.out.println("目录：" + status.getPath().getName());
+            }
+        }
+    }
 
 }
