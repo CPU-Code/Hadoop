@@ -100,6 +100,23 @@ public class HdfsClient {
                 new Path("hdfs://cpucode100/test/"));
     }
 
+    /**
+     * 文件下载
+     * @throws IOException
+     */
+    @Test
+    public void testGet() throws IOException {
+        /**
+         * delSrc : 原文件是否删除
+         * src : 原文件路径HDFS
+         * dst : 目标地址路径Win
+         * useRawLocalFileSystem : 是否校验
+         */
+        fs.copyToLocalFile(false,
+                new Path("hdfs://cpucode100/test/"),
+                new Path("D:\\Date\\github\\Hadoop\\HdfsClientDemo\\src\\main\\resources\\"),
+                false);
+    }
 
 
 
