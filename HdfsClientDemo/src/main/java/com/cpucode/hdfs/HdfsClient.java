@@ -77,8 +77,31 @@ public class HdfsClient {
      * @throws InterruptedException
      */
     @Test
-    public void testMkdir() throws URISyntaxException, IOException, InterruptedException {
+    public void testMkdir() throws IOException {
         // 2 创建一个文件夹
         fs.mkdirs(new Path("/test/code"));
     }
+
+    /**
+     * 上传
+     * @throws IOException
+     */
+    @Test
+    public void testPut() throws IOException {
+        /**
+         * delSrc : 表示删除原数据
+         * overwrite : 是否允许覆盖
+         * src : 原数据路径
+         * dst : 目的地路径
+         */
+        fs.copyFromLocalFile(false,
+                true,
+                new Path("D:\\Date\\github\\Hadoop\\HdfsClientDemo\\src\\main\\resources\\test100.txt"),
+                new Path("hdfs://cpucode100/test/"));
+    }
+
+
+
+
+
 }
