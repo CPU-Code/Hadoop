@@ -1,2 +1,18 @@
-# hadoop
-hadoop学习之旅
+# Hadoop
+
+Hadoop 学习之旅
+
+
+
+-----------------------------
+
+
+## [HDFS](HdfsClientDemo)
+
+
+- [x] [客户端操作 HDFS](HdfsClientDemo/src/main/java/com/cpucode/hdfs/HdfsClient.java)
+
+
+
+
+-------------------------
