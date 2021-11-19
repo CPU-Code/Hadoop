@@ -35,6 +35,7 @@ public class HdfsClient {
      */
     @Test
     public void testMkdirs() throws IOException, URISyntaxException, InterruptedException{
+
         // 1 获取文件系统
         Configuration configuration = new Configuration();
 
