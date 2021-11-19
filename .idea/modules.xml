@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/HdfsClientDemo/HdfsClientDemo.iml" filepath="$PROJECT_DIR$/HdfsClientDemo/HdfsClientDemo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/MapReduceDemo/MapReduceDemo.iml" filepath="$PROJECT_DIR$/MapReduceDemo/MapReduceDemo.iml" />
     </modules>
   </component>
 </project>
