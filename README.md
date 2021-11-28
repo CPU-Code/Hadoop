@@ -21,3 +21,11 @@ Hadoop 学习之旅
 
 -------------------------
 
+## [Zookeeper](zookeeper)
+
+
+- [x] [zk测试api](zookeeper/src/main/java/com/cpucode/zk/ZkClient.java)
+
+
+-------------------------
+

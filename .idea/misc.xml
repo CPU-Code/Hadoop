@@ -5,6 +5,7 @@
       <list>
         <option value="$PROJECT_DIR$/HdfsClientDemo/pom.xml" />
         <option value="$PROJECT_DIR$/MapReduceDemo/pom.xml" />
+        <option value="$PROJECT_DIR$/zookeeper/pom.xml" />
       </list>
     </option>
   </component>
