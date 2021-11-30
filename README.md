@@ -36,6 +36,7 @@ Hadoop 学习之旅
 - [x] [重置offset](kafka/src/main/java/com/cpucode/kafka/consumer/KafkaReset.java)
 - [x] [同步提交](kafka/src/main/java/com/cpucode/kafka/consumer/ConsumerSync.java)
 - [x] [异步提交](kafka/src/main/java/com/cpucode/kafka/consumer/ConsumerAsync.java)
+- [ ] [拦截器](kafka/src/main/java/com/cpucode/kafka/interceptor/KafkaProducerInterceptor.java)
 
 -------------------------
 
