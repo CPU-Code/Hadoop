@@ -9,10 +9,13 @@
         <module name="HdfsClientDemo" />
         <module name="MapReduceDemo" />
         <module name="zookeeper" />
+        <module name="kafka" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="Hadoop" target="1.5" />
       <module name="HdfsClientDemo" target="1.8" />
+      <module name="kafka" target="1.5" />
       <module name="MapReduceDemo" target="1.8" />
       <module name="untitled" target="1.5" />
       <module name="zookeeper" target="1.8" />
