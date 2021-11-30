@@ -31,6 +31,7 @@ Hadoop 学习之旅
 - [x] [生产者_异步发送_不带回调](kafka/src/main/java/com/cpucode/kafka/producer/KafkaAsyn.java)
 - [x] [生产者_异步发送_带回调](kafka/src/main/java/com/cpucode/kafka/producer/KafkaCallback.java)
 - [x] [生产者_同步发送_带回调](kafka/src/main/java/com/cpucode/kafka/producer/KafkaSync.java)
+- [x] [自定义分区](kafka/src/main/java/com/cpucode/kafka/partitioner/KafkaProducerPartitioner.java)
 
 -------------------------
 
