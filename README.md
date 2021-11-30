@@ -29,6 +29,7 @@ Hadoop 学习之旅
 ## [Kafka](kafka)
 
 - [x] [生产者_异步发送_不带回调](kafka/src/main/java/com/cpucode/kafka/producer/KafkaAsyn.java)
+- [x] [生产者_异步发送_带回调](kafka/src/main/java/com/cpucode/kafka/producer/KafkaCallback.java)
 
 -------------------------
 
