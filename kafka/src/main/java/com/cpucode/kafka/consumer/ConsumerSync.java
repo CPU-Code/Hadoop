@@ -25,8 +25,8 @@ public class ConsumerSync {
         // 消费者组id
         props.put("group.id", "cpuCode");
 
-        // 自动提交offset
-        props.put("enable.auto.commit", "true");
+        //关闭自动提交offset
+        props.put("enable.auto.commit", "false");
         // offset提交的间隔
         props.put("auto.commit.interval.ms", "1000");
 
