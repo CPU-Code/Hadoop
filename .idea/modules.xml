@@ -5,6 +5,7 @@
       <module fileurl="file://$PROJECT_DIR$/Hadoop.iml" filepath="$PROJECT_DIR$/Hadoop.iml" />
       <module fileurl="file://$PROJECT_DIR$/HdfsClientDemo/HdfsClientDemo.iml" filepath="$PROJECT_DIR$/HdfsClientDemo/HdfsClientDemo.iml" />
       <module fileurl="file://$PROJECT_DIR$/MapReduceDemo/MapReduceDemo.iml" filepath="$PROJECT_DIR$/MapReduceDemo/MapReduceDemo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/YarnDemo/YarnDemo.iml" filepath="$PROJECT_DIR$/YarnDemo/YarnDemo.iml" />
       <module fileurl="file://$PROJECT_DIR$/kafka/kafka.iml" filepath="$PROJECT_DIR$/kafka/kafka.iml" />
       <module fileurl="file://$PROJECT_DIR$/zookeeper/zookeeper.iml" filepath="$PROJECT_DIR$/zookeeper/zookeeper.iml" />
     </modules>

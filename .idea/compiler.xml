@@ -7,6 +7,7 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="HdfsClientDemo" />
+        <module name="YarnDemo" />
         <module name="MapReduceDemo" />
         <module name="zookeeper" />
         <module name="kafka" />
@@ -18,6 +19,7 @@
       <module name="kafka" target="1.8" />
       <module name="MapReduceDemo" target="1.8" />
       <module name="untitled" target="1.5" />
+      <module name="YarnDemo" target="1.8" />
       <module name="zookeeper" target="1.8" />
     </bytecodeTargetLevel>
   </component>
