@@ -12,8 +12,9 @@ Hadoop 学习之旅
 
 ## [MapReduce](MapReduceDemo)
 
-- [ ] []()
-
+- [ ] [](MapReduceDemo/src/main/java/com/cpucode/mapreduce/wordcount/WordCountDriver.java)
+- [ ] [](MapReduceDemo/src/main/java/com/cpucode/mapreduce/wordcountargs/WordCountDriver.java)
+- [x] [序列化](MapReduceDemo/src/main/java/com/cpucode/mapreduce/writable/FlowDriver.java)
 
 -------------------------
 
