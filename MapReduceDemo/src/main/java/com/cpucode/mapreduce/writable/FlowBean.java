@@ -31,6 +31,11 @@ public class FlowBean implements Writable {
      */
     private long sumFlow;
 
+    /**
+     * 实现序列化和反序列化方法,注意顺序一定要保持一致
+     * @param dataOutput
+     * @throws IOException
+     */
     @Override
     public void write(DataOutput dataOutput) throws IOException {
         dataOutput.writeLong(upFlow);
@@ -45,6 +50,10 @@ public class FlowBean implements Writable {
         this.sumFlow = dataInput.readLong();
     }
 
+    /**
+     * 重写 ToString
+     * @return
+     */
     @Override
     public String toString() {
         return upFlow + "\t" + downFlow + "\t" + sumFlow;
