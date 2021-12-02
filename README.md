@@ -16,6 +16,7 @@ Hadoop 学习之旅
 - [x] [单词计数入参](MapReduceDemo/src/main/java/com/cpucode/mapreduce/wordcountargs/WordCountDriver.java)
 - [x] [序列化](MapReduceDemo/src/main/java/com/cpucode/mapreduce/writable/FlowDriver.java)
 - [x] [切片机制](MapReduceDemo/src/main/java/com/cpucode/mapreduce/combineTextInputformat/WordCountDriver.java)
+- [x] [Partition分区](MapReduceDemo/src/main/java/com/cpucode/mapreduce/partitioner/FlowDriver.java)
 
 -------------------------
 
