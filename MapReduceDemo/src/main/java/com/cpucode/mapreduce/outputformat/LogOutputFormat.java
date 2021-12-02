@@ -1,0 +1,24 @@
+package com.cpucode.mapreduce.outputformat;
+
+import org.apache.hadoop.io.NullWritable;
+import org.apache.hadoop.io.Text;
+import org.apache.hadoop.mapreduce.RecordWriter;
+import org.apache.hadoop.mapreduce.TaskAttemptContext;
+import org.apache.hadoop.mapreduce.lib.output.FileOutputFormat;
+
+import java.io.IOException;
+
+/**
+ * @author : cpucode
+ * @date : 2021/12/2 17:21
+ * @github : https://github.com/CPU-Code
+ * @csdn : https://blog.csdn.net/qq_44226094
+ */
+public class LogOutputFormat extends FileOutputFormat<Text, NullWritable> {
+    @Override
+    public RecordWriter<Text, NullWritable> getRecordWriter(TaskAttemptContext taskAttemptContext) throws IOException, InterruptedException {
+        LogRecordWriter lrw = new LogRecordWriter(taskAttemptContext);
+
+        return lrw;
+    }
+}

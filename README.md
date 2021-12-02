@@ -20,6 +20,7 @@ Hadoop 学习之旅
 - [x] [全排序](MapReduceDemo/src/main/java/com/cpucode/mapreduce/writableComparable/FlowDriver.java)
 - [x] [区内排序](MapReduceDemo/src/main/java/com/cpucode/mapreduce/partitionerComparable/FlowDriver.java)
 - [x] [Combiner合并](MapReduceDemo/src/main/java/com/cpucode/mapreduce/combiner/WordCountDriver.java)
+- [x] [自定义OutputFormat](MapReduceDemo/src/main/java/com/cpucode/mapreduce/outputformat/LogDriver.java)
 
 -------------------------
 
