@@ -19,7 +19,7 @@ Hadoop 学习之旅
 - [x] [Partition分区](MapReduceDemo/src/main/java/com/cpucode/mapreduce/partitioner/FlowDriver.java)
 - [x] [全排序](MapReduceDemo/src/main/java/com/cpucode/mapreduce/writableComparable/FlowDriver.java)
 - [x] [区内排序](MapReduceDemo/src/main/java/com/cpucode/mapreduce/partitionerComparable/FlowDriver.java)
-- [x] [Combiner合并]()
+- [x] [Combiner合并](MapReduceDemo/src/main/java/com/cpucode/mapreduce/combiner/WordCountDriver.java)
 
 -------------------------
 
