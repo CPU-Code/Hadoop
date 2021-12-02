@@ -17,6 +17,7 @@ Hadoop 学习之旅
 - [x] [序列化](MapReduceDemo/src/main/java/com/cpucode/mapreduce/writable/FlowDriver.java)
 - [x] [切片机制](MapReduceDemo/src/main/java/com/cpucode/mapreduce/combineTextInputformat/WordCountDriver.java)
 - [x] [Partition分区](MapReduceDemo/src/main/java/com/cpucode/mapreduce/partitioner/FlowDriver.java)
+- [x] [全排序](MapReduceDemo/src/main/java/com/cpucode/mapreduce/writableComparable/FlowDriver.java)
 
 -------------------------
 
