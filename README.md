@@ -23,7 +23,7 @@ Hadoop 学习之旅
 - [x] [自定义OutputFormat](MapReduceDemo/src/main/java/com/cpucode/mapreduce/outputformat/LogDriver.java)
 - [x] [Reduce Join](MapReduceDemo/src/main/java/com/cpucode/mapreduce/reduceJoin/TableDriver.java)
 - [x] [MapJoin](MapReduceDemo/src/main/java/com/cpucode/mapreduce/mapjoin/MapJoinDriver.java)
-- [x] []()
+- [x] [数据清洗](MapReduceDemo/src/main/java/com/cpucode/mapreduce/etl/WebLogDriver.java)
 
 -------------------------
 
