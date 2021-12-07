@@ -24,6 +24,7 @@ Hadoop 学习之旅
 - [x] [Reduce Join](MapReduceDemo/src/main/java/com/cpucode/mapreduce/reduceJoin/TableDriver.java)
 - [x] [MapJoin](MapReduceDemo/src/main/java/com/cpucode/mapreduce/mapjoin/MapJoinDriver.java)
 - [x] [数据清洗](MapReduceDemo/src/main/java/com/cpucode/mapreduce/etl/WebLogDriver.java)
+- [x] [压缩实操](MapReduceDemo/src/main/java/com/cpucode/mapreduce/compress/WordCountDriver.java)
 
 -------------------------
 
