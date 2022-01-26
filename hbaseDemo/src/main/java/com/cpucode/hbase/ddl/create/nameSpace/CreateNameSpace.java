@@ -1,4 +1,4 @@
-package com.cpucode.hbase.create.nameSpace;
+package com.cpucode.hbase.ddl.create.nameSpace;
 
 import org.apache.hadoop.conf.Configuration;
 import org.apache.hadoop.hbase.HBaseConfiguration;

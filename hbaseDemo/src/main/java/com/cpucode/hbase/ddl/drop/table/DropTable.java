@@ -1,22 +1,23 @@
-package com.cpucode.hbase.create.table;
+package com.cpucode.hbase.ddl.drop.table;
 
 import org.apache.hadoop.conf.Configuration;
 import org.apache.hadoop.hbase.HBaseConfiguration;
 import org.apache.hadoop.hbase.TableName;
-import org.apache.hadoop.hbase.client.*;
-import org.apache.hadoop.hbase.util.Bytes;
+import org.apache.hadoop.hbase.client.Admin;
+import org.apache.hadoop.hbase.client.Connection;
+import org.apache.hadoop.hbase.client.ConnectionFactory;
 
 import java.io.IOException;
 
 /**
- * 创建表
+ * 删除表
  *
  * @author : cpucode
- * @date : 2022/1/26 20:51
+ * @date : 2022/1/26 21:33
  * @github : https://github.com/CPU-Code
  * @csdn : https://blog.csdn.net/qq_44226094
  */
-public class CreateTable {
+public class DropTable {
     private static Connection connection ;
 
     static{
@@ -34,39 +35,27 @@ public class CreateTable {
     public static void main(String[] args) throws IOException {
         String tableName = "test";
 
-        createTable(tableName, "info1", "info2");
+        dropTable(tableName);
     }
 
-    public static void createTable(String tableName, String... cfs) throws IOException {
-        //1.判断是否存在列族信息
-        if (cfs.length <= 0){
-            System.err.println("请设置列族信息！");
+    public static void dropTable(String tableName) throws IOException {
+        //1.判断表是否存在
+        if (!isTableExist(tableName)){
+            System.err.println("需要删除的表不存在！");
             return;
         }
 
-        //2.判断表是否存在
-        if (isTableExist(tableName)){
-            System.err.println("需要创建的表已存在！");
-            return;
-        }
-
-        //5.获取DDL操作对象
+        //4.获取DDL操作对象
         Admin admin = connection.getAdmin();
 
-        //6.创建表描述器构造器
-        TableDescriptorBuilder tableDescriptorBuilder = TableDescriptorBuilder.newBuilder(TableName.valueOf(tableName));
+        //5.使表下线
+        TableName tableName1 = TableName.valueOf(tableName);
+        admin.disableTable(tableName1);
 
-        //7.循环添加列族信息
-        for (String cf : cfs) {
-            ColumnFamilyDescriptorBuilder columnFamilyDescriptorBuilder = ColumnFamilyDescriptorBuilder.newBuilder(Bytes.toBytes(cf));
+        //6.执行删除表操作
+        admin.deleteTable(tableName1);
 
-            tableDescriptorBuilder.setColumnFamily(columnFamilyDescriptorBuilder.build());
-        }
-
-        //8.执行创建表的操作
-        admin.createTable(tableDescriptorBuilder.build());
-
-        //9.关闭资源
+        //7.关闭资源
         admin.close();
         connection.close();
     }

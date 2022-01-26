@@ -1,4 +1,4 @@
-package com.cpucode.hbase.table.exist;
+package com.cpucode.hbase.ddl.exist;
 
 import org.apache.hadoop.conf.Configuration;
 import org.apache.hadoop.hbase.*;
