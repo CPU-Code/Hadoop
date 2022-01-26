@@ -5,10 +5,9 @@ Hbase 学习之旅
 -----------------------------
 
 
-## [Hbase](hbaseDemo/src/main/java/com/cpucode/hbase)
+## [Hbase](src/main/java/com/cpucode/hbase)
 
-- [x] [判断表是否存在](hbaseDemo/src/main/java/com/cpucode/hbase/table/exist/IsTableExist.java)
-
+- [x] [判断表是否存在](src/main/java/com/cpucode/hbase/table/exist/IsTableExist.java)
 
 -------------------------
 
