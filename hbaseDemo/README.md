@@ -15,7 +15,7 @@ Hbase 学习之旅
 - [x] [单条数据查询](src/main/java/com/cpucode/hbase/dml/get/data/GetData.java)
 - [x] [扫描数据](src/main/java/com/cpucode/hbase/dml/scan/table/ScanTable.java)
 - [x] [删除数据](src/main/java/com/cpucode/hbase/dml/deleta/data/DeleteData.java)
-
+- [x] [创建预分区](src/main/java/com/cpucode/hbase/ddl/create/table/with/regions/CreateTableWithRegions.java)
 
 -------------------------
 
