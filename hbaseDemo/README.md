@@ -14,6 +14,7 @@ Hbase 学习之旅
 - [x] [插入数据](src/main/java/com/cpucode/hbase/dml/put/data/PutData.java)
 - [x] [单条数据查询](src/main/java/com/cpucode/hbase/dml/get/data/GetData.java)
 - [x] [扫描数据](src/main/java/com/cpucode/hbase/dml/scan/table/ScanTable.java)
+- [x] [删除数据](src/main/java/com/cpucode/hbase/dml/deleta/data/DeleteData.java)
 
 
 -------------------------
