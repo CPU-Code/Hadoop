@@ -10,5 +10,6 @@ Hadoop 学习之旅
 - [x] [Zookeeper](zookeeper/README.md)
 - [ ] [Kafka](kafka/README.md)
 - [ ] [HBase](hbaseDemo/README.md)
+- [ ] [Phoenix](phoenixDemo/README.md)
 
 -------------------------

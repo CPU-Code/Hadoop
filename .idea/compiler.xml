@@ -11,6 +11,7 @@
         <module name="hbaseDemo" />
         <module name="kafka" />
         <module name="MapReduceDemo" />
+        <module name="phoenixDemo" />
         <module name="zookeeper" />
         <module name="YarnDemo" />
       </profile>
@@ -21,6 +22,7 @@
       <module name="HdfsClientDemo" target="1.8" />
       <module name="kafka" target="1.8" />
       <module name="MapReduceDemo" target="1.8" />
+      <module name="phoenixDemo" target="1.8" />
       <module name="untitled" target="1.5" />
       <module name="YarnDemo" target="1.8" />
       <module name="zookeeper" target="1.8" />

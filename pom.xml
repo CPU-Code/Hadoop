@@ -12,6 +12,7 @@
         <module>kafka</module>
         <module>YarnDemo</module>
         <module>hbaseDemo</module>
+        <module>phoenixDemo</module>
     </modules>
 
     <properties>
