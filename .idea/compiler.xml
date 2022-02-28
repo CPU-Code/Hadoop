@@ -8,15 +8,17 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="HdfsClientDemo" />
-        <module name="hbaseDemo" />
+        <module name="phoenixDemo" />
+        <module name="flumeETL" />
         <module name="kafka" />
         <module name="MapReduceDemo" />
-        <module name="phoenixDemo" />
         <module name="zookeeper" />
         <module name="YarnDemo" />
+        <module name="hbaseDemo" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="flumeETL" target="1.8" />
       <module name="Hadoop" target="1.8" />
       <module name="hbaseDemo" target="1.8" />
       <module name="HdfsClientDemo" target="1.8" />

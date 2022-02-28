@@ -11,6 +11,6 @@ Hadoop 学习之旅
 - [ ] [Kafka](kafka/README.md)
 - [ ] [HBase](hbaseDemo/README.md)
 - [ ] [Phoenix](phoenixDemo/README.md)
-
+- [ ] [flume](flumeETL/README.md)
 
 -------------------------

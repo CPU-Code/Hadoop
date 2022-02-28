@@ -13,6 +13,7 @@
         <module>YarnDemo</module>
         <module>hbaseDemo</module>
         <module>phoenixDemo</module>
+        <module>flumeETL</module>
     </modules>
 
     <properties>
