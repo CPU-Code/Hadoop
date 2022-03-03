@@ -10,6 +10,7 @@ import com.alibaba.fastjson.JSONException;
  * @csdn : https://blog.csdn.net/qq_44226094
  */
 public class JSONUtils {
+    //验证数据是否json
     public static boolean isJSONValidate(String log){
         try {
             JSON.parse(log);

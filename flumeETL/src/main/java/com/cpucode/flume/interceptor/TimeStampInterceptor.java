@@ -24,11 +24,14 @@ public class TimeStampInterceptor implements Interceptor {
 
     @Override
     public Event intercept(Event event) {
+        //1. 获取header头
         Map<String, String> headers = event.getHeaders();
+        //2. 获取body中的ts
         String log = new String(event.getBody(), StandardCharsets.UTF_8);
         JSONObject jsonObject = JSONObject.parseObject(log);
         String ts = jsonObject.getString("ts");
 
+        //3. 将ts赋值给timestamp
         headers.put("timestamp", ts);
 
         return event;

@@ -18,11 +18,11 @@ public class ETLInterceptor implements Interceptor {
 
     @Override
     public void initialize() {
-
     }
 
     @Override
     public Event intercept(Event event) {
+        // 取数据后进行校验
         byte[] body = event.getBody();
         String log = new String(body, StandardCharsets.UTF_8);
 
@@ -36,15 +36,16 @@ public class ETLInterceptor implements Interceptor {
 
     @Override
     public List<Event> intercept(List<Event> list) {
+        Iterator<Event> iterator = list.iterator();
+        while(iterator.hasNext()){
+            Event next = iterator.next();
 
-        list.removeIf(next -> intercept(next) != null);
+            if(intercept(next) == null){
+                iterator.remove();
+            }
+        }
 
-//        while (iterator.hasNext()) {
-//            Event next = iterator.next();
-//            if (intercept(next) != null) {
-//                iterator.remove();
-//            }
-//        }
+        //list.removeIf(next -> intercept(next) != null);
 
         return list;
     }
