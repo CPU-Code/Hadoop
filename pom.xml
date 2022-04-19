@@ -14,6 +14,7 @@
         <module>hbaseDemo</module>
         <module>phoenixDemo</module>
         <module>flumeETL</module>
+        <module>FlinkDemo</module>
     </modules>
 
     <properties>

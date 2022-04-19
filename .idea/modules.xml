@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/FlinkDemo/FlinkDemo.iml" filepath="$PROJECT_DIR$/FlinkDemo/FlinkDemo.iml" />
       <module fileurl="file://$PROJECT_DIR$/Hadoop.iml" filepath="$PROJECT_DIR$/Hadoop.iml" />
       <module fileurl="file://$PROJECT_DIR$/HdfsClientDemo/HdfsClientDemo.iml" filepath="$PROJECT_DIR$/HdfsClientDemo/HdfsClientDemo.iml" />
       <module fileurl="file://$PROJECT_DIR$/MapReduceDemo/MapReduceDemo.iml" filepath="$PROJECT_DIR$/MapReduceDemo/MapReduceDemo.iml" />

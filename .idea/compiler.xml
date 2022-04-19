@@ -12,12 +12,14 @@
         <module name="flumeETL" />
         <module name="kafka" />
         <module name="MapReduceDemo" />
+        <module name="FlinkDemo" />
         <module name="zookeeper" />
         <module name="YarnDemo" />
         <module name="hbaseDemo" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="FlinkDemo" target="1.8" />
       <module name="flumeETL" target="1.8" />
       <module name="Hadoop" target="1.8" />
       <module name="hbaseDemo" target="1.8" />
