@@ -8,6 +8,7 @@ Flink 学习之旅
 
 - [x] [批处理wc](src/main/java/com/cpucode/wc/BatchWordCount.java)
 - [x] [流处理文件wc](src/main/java/com/cpucode/wc/BoundedStreamWordCount.java)
+- [x] [流处理监听端口wc](src/main/java/com/cpucode/wc/StreamWordCount.java)
 
 -------------------------
 
